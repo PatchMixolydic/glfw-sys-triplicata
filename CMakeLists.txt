@@ -24,6 +24,7 @@ option(GLFW_BUILD_TESTS "Build the GLFW test programs" ON)
 option(GLFW_BUILD_DOCS "Build the GLFW documentation" ON)
 option(GLFW_INSTALL "Generate installation target" ON)
 option(GLFW_VULKAN_STATIC "Assume the Vulkan loader is linked with the application" OFF)
+option(TRIPLICATA_NO_CONTROLLER_MAPPINGS "Remove all controller mappings" OFF)
 
 include(GNUInstallDirs)
 include(CMakeDependentOption)

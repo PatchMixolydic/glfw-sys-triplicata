@@ -185,6 +185,10 @@ if (MSVC OR CMAKE_C_SIMULATE_ID STREQUAL "MSVC")
     target_compile_definitions(glfw PRIVATE _CRT_SECURE_NO_WARNINGS)
 endif()
 
+if (TRIPLICATA_NO_CONTROLLER_MAPPINGS)
+    target_compile_definitions(glfw PRIVATE _TRIPLICATA_NO_CONTROLLER_MAPPINGS)
+endif()
+
 if (GLFW_INSTALL)
     install(TARGETS glfw
             EXPORT glfwTargets
